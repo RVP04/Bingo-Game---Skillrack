@@ -1,17 +1,5 @@
 # Bingo-Game---Skillrack
-
-<div class="ui raised segment big">
-
-                                                <div class="ui label big circular grey">Program ID- 3622</div>
-                                                <div class="ui label big circular pink"> Solved By 66 Users</div> 
-
-
-
-                                                <div class="ui label big circular black">Author: SkillRack</div>                                                
-                                                <img class="ui avatar image mini circular" src="http://cdn.skillrack.com/profilepic/1/1508170751418skillrack.png">
-                                                <br>
-                                                <h3 style="color:#003333">BINGO Game</h3>
-                                                <br> <p>A Bingo game is played with a 5x5 matrix board. When a person correctly guesses a number in the board it is slashed. When 5 rows or columns are entirely slashed it is BINGO (As BINGO contains 5 letters).</p>
+<p>A Bingo game is played with a 5x5 matrix board. When a person correctly guesses a number in the board it is slashed. When 5 rows or columns are entirely slashed it is BINGO (As BINGO contains 5 letters).</p>
 
 <p>Given the values for the 5*5 matrix board, followed by N numbers which are guesses by a person, find the number of guesses needed for a BINGO.</p>
 
@@ -47,5 +35,3 @@ Last 4 guesses are not required as after <strong>29</strong> guesses the bingo i
 - - - 19 20<br>
 - - - -&nbsp; -<br>
 Here 2 rows and 3 columns are slashed (that is a total of 5 rows or columns are completely slashed)</p>
-
-                                            </div>
