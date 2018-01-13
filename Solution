@@ -1,0 +1,71 @@
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[][] board = new int[5][5];
+        
+        for(int i=0;i<5;i++)
+        for(int j=0;j<5;j++)
+        board[i][j]=sc.nextInt();
+        
+        int numbersCount = sc.nextInt();
+        int[] numbers = new int[numbersCount];
+        for(int i =0;i<numbersCount;i++)
+        numbers[i]=sc.nextInt();
+        
+        int slashcount = 0;
+        
+         for(int i=0;i<numbersCount;i++)
+         {
+             for(int row=0;row<5;row++)
+             {
+                 for(int col=0;col<5;col++)
+                 {
+                     if(numbers[i]==board[row][col])
+                     {
+                         board[row][col]=0;
+                     }
+                 }
+             }
+             int temp = checkBoard(board);
+         if(temp<5)
+         {
+             slashcount++;
+         }
+         else if(temp>=5)
+         {
+          slashcount++;
+          break;
+         }
+         }
+         System.out.println(slashcount);
+	}
+	
+	protected static int checkBoard(int[][] boardArray)
+	{
+	    int rcount = 0;
+	    int ccount = 0;
+	    int rowcount = 0;
+	    int colcount = 0;
+	    for(int i =0;i<5;i++)
+	    {
+	        for(int j=0;j<5;j++)
+	        {
+	            if(boardArray[i][j]==0)
+	                rcount++;
+
+	            if(boardArray[j][i]==0)
+	                ccount++;
+	        }
+	        if(rcount==5)
+	        {rowcount++;}
+	        
+	        if(ccount==5)
+	        {colcount++;}
+
+	        rcount = 0;ccount=0;
+	    }
+	    return rowcount+colcount;
+	}
+}
